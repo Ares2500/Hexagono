@@ -1,0 +1,79 @@
+/*body { 
+    background: #E5E5E5; 
+    margin: 0; 
+    padding: 0; 
+} */
+
+
+.content { 
+    margin: 180px auto 40px; 
+    width: 300px; 
+    padding-bottom: 30px; 
+} 
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    position: relative;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 50px 25px;
+    border-style: solid;
+    /*border-color: transparent transparent red;*/
+    border-color: transparent transparent white;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 25px 50px 0;
+    border-style: solid;
+    border-color: white transparent transparent;
+}
+
+.hexagon[class*="icon-"]{ 
+    background-color: #FFF; 
+    background-repeat: no-repeat; 
+    background-position: 50% 50%; 
+} 
+
+.icon-imagen {background-image: url('images/youtube.png'); background-size: 60px 60px;} 
+
+.top, .bottom { 
+    float: left; 
+    clear: left; 
+} 
+
+.top { 
+    margin-left: 48px; 
+    margin-top: 3px; 
+} 
+
+.bottom { 
+    margin-top: 3px; 
+} 
+
+
+
+/* 
+* Hover 
+* */ 
+.hexagon:hover{ 
+    background-color: #F5F5F5; 
+} 
+
+.hexagon:hover:before, .hexagon:hover:after { 
+    border-color: #F5F5F5 transparent; 
+}  
+

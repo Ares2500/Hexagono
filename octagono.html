@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#octogono { 
+		width: 150px; 
+		height: 150px; 
+		background: #999; 
+		position: relative; 
+	} 
+	#octogono:before { 
+		content: ""; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		border-bottom: 44px solid #999; 
+		border-left: 44px solid #fff;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/
+		border-right: 44px solid #fff; 
+		width: 63px; height: 0; 
+	} 
+
+	#octogono:after { 
+		content: ""; 
+		position: absolute; 
+		bottom: 0; 
+		left: 0; 
+		border-top: 44px solid #999; 
+		border-left: 44px solid #fff; 
+		border-right: 44px solid #fff; 
+		width: 63px; 
+		height: 0; }
+	</style>
+</head>
+<body>
+	<div id="octogono">a</div>
+</body>
+</html>
